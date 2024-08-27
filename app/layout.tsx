@@ -24,12 +24,15 @@ export default function RootLayout({
       lang="en"
       className="grid grid-cols-12 min-h-screen bg-gradient-to-r from-stone-900 to-gray-900"
     >
-      <body className={`${inter.className} col-start-4 col-span-6   mt-20 `}>
+      <body
+        className={`${inter.className} col-start-2 col-span-10 md:col-start-4 md:col-span-6   mt-20 `}
+      >
         <div className="flex gap-4 mb-20">
           {navigationLinks.map((link, index) => (
             <Link
               key={index}
               href={link.href}
+              prefetch={link.href === "/contact" ? true : false}
               className={`font-semibold hover:text-cyan-100 text-2xl text-stone-200 ${
                 pathname === link.href ? "text-cyan-50" : ""
               }`}
