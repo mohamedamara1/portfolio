@@ -1,15 +1,11 @@
 "use client";
 
-//import EarthCanvas from "@/components/earth";
+import EarthCanvas from "@/components/earth";
 import SectionWrapper from "@/hoc/SectionWrapper";
 import { slideIn, staggerContainer } from "@/utils/motion";
 import { motion } from "framer-motion";
 import { Suspense } from "react";
-import dynamic from "next/dynamic";
 
-const EarthCanvas = dynamic(() => import("@/components/earth"), {
-  loading: () => <div>loading</div>, // Display a spinner while loading
-});
 const Contact = () => (
   <motion.section
     variants={staggerContainer()}
