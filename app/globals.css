@@ -17,6 +17,15 @@
 }
 
 
+@layer base {
+ 
+
+  .title {
+    @apply font-serif text-3xl font-bold underline  underline-offset-8 text-yellow-50;
+  }
+
+}
+
 
 @layer utilities {
   .text-balance {
