@@ -8,7 +8,7 @@ const projects = [
     name: "Dolor irure ut ad irure Lorem ut et nulla.",
     description:
       "Lorem aliqua et dolor tet amet consectetur et voluptate reprehenderit irure fugiat eiusmod aliquip.",
-    slug: "project-one",
+    slug: "next-mdx-portfolio",
     tags: ["react", "react", "react", "react", "react", "react"],
   },
   {

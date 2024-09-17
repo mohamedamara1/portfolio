@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <div className=" flex flex-col gap-10">
       <h1 className="text-4xl font-bold text-gray-50">Mohamed Amara</h1>
-      <div className="prose lg:prose-xl text-xl font-normal flex flex-col gap-10 [&>p]:text-gray-300">
+      <div className="prose lg:prose-xl text-xl font-normal flex flex-col [&>p]:text-gray-300">
         <p>
           I&apos;m a software engineer with a passion for building products that
           make a difference. I have experience in building web applications,
