@@ -1,0 +1,84 @@
+﻿---
+  title: Google Classroom Automater
+#  summary: A portfolio website built with NextJs and MDX.
+#  image: /images/projects/next-mdx-portfolio.jpg
+  author: 'Mohamed Amara'
+  publishedAt: '2024-08-08'
+---
+
+## Overview
+
+The **Google Classroom Automater** is a tool designed to simplify and streamline tasks in Google Classroom, particularly for students and teachers. Originally started as a simple Python script, the project evolved into a full-stack application written in Java, with a more robust feature set and integration with Google APIs for a seamless user experience.
+
+## Problem Statement
+
+Google Classroom is a widely-used platform, but it can become cumbersome for users to manually download files and manage course materials, especially when dealing with multiple classes. The platform does not natively provide batch operations for students or teachers, making routine tasks time-consuming.
+
+### Key Challenges:
+
+- **Manual File Downloads:** Students and teachers need to download files from each assignment or folder individually.
+- **Repetitive Tasks:** Handling multiple classes or courses requires repetitive actions.
+- **Time Consumption:** The lack of bulk management options leads to inefficiencies, especially for busy students and educators.
+
+## The Solution
+
+The **Google Classroom Automater** provides a solution by automating the file management process within Google Classroom, allowing users to download assignments and course materials in bulk. The tool connects with the user's Google account to access Classroom data securely.
+
+### Features:
+
+- **Bulk Download:** Automates the process of downloading files from assignments and classroom folders.
+- **Supports Both Students and Teachers:** Students can download their submissions, while teachers can collect files from all students.
+- **Secure Google Account Authentication:** The Java version includes OAuth-based login, ensuring that user data remains safe.
+
+## Implementation
+
+### Technologies Used:
+
+- **Python (Initial Prototype):** A script-based solution that automated basic file download tasks.
+- **Java (Full-Stack Development):** Rebuilt the project in Java, integrating it with the Google Classroom API for a more scalable and feature-rich tool.
+- **Google Classroom and Drive API:** Used to interact with assignments and download files directly from Google Drive.
+- **OAuth 2.0 Authentication:** Provides secure access to Google accounts for students and teachers.
+
+### Key Steps in the Implementation:
+
+1.  **Google API Integration:**
+
+    - The tool interacts with Google Classroom using the Classroom API to fetch data on assignments and files.
+    - It also integrates with Google Drive API for downloading the files directly.
+
+2.  **OAuth 2.0 Authentication:**
+
+    - Implements Google OAuth 2.0 to securely log in users (students and teachers).
+    - Ensures access permissions are respected while interacting with Classroom and Drive resources.
+
+3.  **Bulk File Management:**
+
+    - Retrieves all files related to assignments for a specific user (student or teacher).
+    - Allows for easy download and sorting of files without manual intervention.
+
+## User Workflow
+
+### For Students:
+
+1.  Login using your Google Account.
+2.  Select a classroom from your enrolled courses.
+3.  Choose assignments to download files from in bulk.
+
+### For Teachers:
+
+1.  Login using your Google Account.
+2.  Select a classroom from the courses you manage.
+3.  Automatically download submissions from all students for a selected assignment.
+
+## Future Enhancements
+
+- **Improved Customization:** Allow users to further customize file naming conventions or folder structures to match their specific needs.
+- **Extended APIs:** Support for other APIs like Google Calendar for assignment reminders and task automation.
+
+## Conclusion
+
+The Google Classroom Automater streamlines classroom management, saving time for both students and teachers by automating mundane tasks. It’s a powerful tool for improving productivity in educational environments.
+
+## Links
+
+- [GitHub Repository](https://github.com/mohamedamara1/classroom-files-downloader)
