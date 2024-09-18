@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,11 @@ export default function RootLayout({
       <body
         className={`${inter.className} col-start-2 col-span-10 md:col-start-4 md:col-span-6   mt-20 `}
       >
+        <Script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="508f48f3-7938-46d6-8930-80877c90c5e6"
+        />
         <div className="flex gap-4 mb-20">
           {navigationLinks.map((link, index) => (
             <Link
