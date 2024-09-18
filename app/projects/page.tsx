@@ -5,36 +5,18 @@ import { GoLinkExternal } from "react-icons/go";
 
 const projects = [
   {
-    name: "Dolor irure ut ad irure Lorem ut et nulla.",
+    name: "El Kharja",
     description:
-      "Lorem aliqua et dolor tet amet consectetur et voluptate reprehenderit irure fugiat eiusmod aliquip.",
-    slug: "next-mdx-portfolio",
-    tags: ["react", "react", "react", "react", "react", "react"],
+      "A simple web app for friends or small groups to coordinate their availabilities for events or gatherings.",
+    slug: "elkharja",
+    tags: ["react", "nextjs", "tailwindcss", "typescript", "Google Sheets API"],
   },
   {
-    name: "Cillum esse magna elit reprehenderit.",
+    name: "Google Classroom Automater",
     description:
-      "Sit consequats consectetur aliquip v enim mollit ad. Consectetur eiusmod esse in ut velit fugiat anim minim excepteur duis in.",
-    slug: "project-two",
-    tags: ["react", "typescript"],
-  },
-  {
-    name: "Project 3",
-    description: "This is project 3",
-    slug: "project-three",
-    tags: ["react"],
-  },
-  {
-    name: "Project 3",
-    description: "This is project 3",
-    slug: "project-three",
-    tags: ["react"],
-  },
-  {
-    name: "Project 3",
-    description: "This is project 3",
-    slug: "project-three",
-    tags: ["react"],
+      "A tool to autoamte the process of downloading Google Classroom resources",
+    slug: "google-classroom-automater",
+    tags: ["python", "java", "Google Classroom API", "Google Drive API"],
   },
 ];
 export default function Projects() {

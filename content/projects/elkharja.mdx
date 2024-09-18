@@ -1,0 +1,89 @@
+﻿---
+  title: Elkharja - Event Availability Tracker
+#  summary: A portfolio website built with NextJs and MDX.
+#  image: /images/projects/next-mdx-portfolio.jpg
+  author: 'Mohamed Amara'
+  publishedAt: '2024-08-08'
+---
+
+
+## Overview
+
+**Elkharja** is a lightweight web application designed for friends or small groups to coordinate availability for events. Using a calendar view, users can easily mark their availability, and event organizers can create events and share links to gather availability data from participants. The project was developed using **Next.js** as a full-stack framework, with **Google Sheets** used as a database to store event and user data. Simple authentication is implemented to allow users to mark their availability securely.
+
+## Problem Statement
+
+Coordinating event availability with friends can become challenging, especially when multiple people need to agree on a time. Messaging back and forth or creating manual spreadsheets becomes tedious and prone to mistakes.
+
+### Key Challenges:
+
+- **Time Coordination:** Difficulty in aligning schedules for multiple people over various times and dates.
+- **Manual Input:** Managing availability manually, using messages or spreadsheets, is inefficient and time-consuming.
+- **Limited Tools:** Existing scheduling apps might be overkill or too complex for smaller, informal groups of friends.
+
+## The Solution
+
+Elkharja offers a simple web app solution where users can create an event and share a link with their friends. Participants can mark their availability across various time slots (morning, afternoon, evening, night) for the entire week. By storing data in Google Sheets, the project remains lightweight while providing the necessary functionality.
+
+### Key Features:
+
+- **Event Creation and Sharing:** Users can create an event and share a link to invite friends to participate.
+- **Calendar Availability View:** Each participant can mark their availability across four time periods (morning, afternoon, evening, night) for every day of the week.
+- **Google Sheets as a Database:** Events and user availability data are stored in Google Sheets, making the project simple yet effective for small-scale use.
+- **Simple Authentication:** Users can log in to identify themselves, ensuring their availability is linked to their identity within the event.
+- **Mobile-friendly:** The app is optimized for mobile devices, allowing users to mark availability on the go.
+
+## Implementation
+
+### Technologies Used:
+
+- **Next.js (Full-Stack Framework):** Used to build both the frontend and backend of the app, with server-side and client-side functionality.
+- **Google Sheets API:** Leveraged as a database to store event details and user availability, allowing for easy data manipulation and retrieval.
+- **React Components:** The calendar and availability selection are built using React, making the user interface interactive and dynamic.
+
+### Key Components:
+
+1.  **Availability Calendar:**
+
+    - Displays a grid layout representing the entire week with time slots (morning, afternoon, evening, night).
+    - Users can select their availability status for each time slot (yes, maybe, no, unknown).
+
+2.  **Data Management:**
+
+    - **Google Sheets as Database:** All user availability and event data are stored in a Google Sheet, ensuring lightweight and quick access for small groups.
+    - **Event Creation and Sharing:** Users can create an event, which automatically generates a unique link to share with friends.
+
+3.  **User Authentication:**
+
+    - Users can authenticate themselves using a simple username stored in localStorage. This allows each participant’s availability to be linked to their profile without the need for complex login mechanisms.
+
+## User Workflow
+
+### For Event Organizers:
+
+1.  Create an event and automatically generate a unique link.
+2.  Share the link with friends, inviting them to mark their availability.
+
+### For Participants:
+
+1.  Access the event using the shared link.
+2.  Log in as a guest or authenticated user.
+3.  Mark availability for each day and time period using the calendar view.
+4.  Save or cancel changes.
+
+## Future Enhancements
+
+- **Extended Calendar Views:** Add support for customizing date ranges beyond a single week for more complex events.
+- **Enhanced Sharing Options:** Allow users to embed event availability directly into messaging platforms like WhatsApp or Slack.
+- **More Authentication Options:** Implement OAuth login for a more secure and robust user authentication experience.
+- **Improved Data Visualization:** Introduce heatmaps or summary charts to visualize group availability and identify the best time slots for events.
+- **Push Notifications:** Implement reminders and notifications for users to update their availability or view final event details.
+
+## Conclusion
+
+Elkharja provides a straightforward and efficient way to coordinate availability for small groups of friends or colleagues. With the use of **Next.js** as a full-stack framework and **Google Sheets** for data management, the app is a lightweight, easy-to-use solution for event planning.
+
+## Links
+
+- [GitHub Repository](https://github.com/mohamedamara1/elkharja)
+- [Live Demo](https://elkharja.vercel.app/event)
