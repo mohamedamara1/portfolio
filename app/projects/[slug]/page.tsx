@@ -32,13 +32,13 @@ export default async function Project({
   return (
     <section className="pb-24 pt-32">
       <div className="container max-w-3xl">
-        <Link
+        {/*  <Link
           href="/projects"
           className="text-stone-100 mb-8 inline-flex items-center gap-2 text-2xl font-semibold text-muted-foreground transition-colors hover:text-foreground"
         >
           <AiOutlineArrowLeft className="h-5 w-5" />
           <span>Back to projects</span>
-        </Link>
+        </Link> */}
 
         {image && (
           <div className="relative mb-6 h-96 w-full overflow-hidden rounded-lg">
